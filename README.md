@@ -8,21 +8,21 @@ I first need to make the application files, which I can then copy to my containe
 This is the structure of the project.
 
 <p align="center">
-  <img src="img/1.PNG" width="200">
+  <img src="img/1.PNG" width="800">
 </p>
 
 ### Step 3 — Writing the Dockerfile
 My Dockerfile specifies what will be included in the application container when it is executed. Using a Dockerfile allows me to define my container environment and avoid discrepancies with dependencies or runtime versions.
 
 <p align="center">
-  <img src="img/2.PNG" width="200">
+  <img src="img/2.PNG" width="800">
 </p>
 
 ### Step 4 — Using a Repository to Work with Image
 By pushing the application image to my DockerHub registry, I make it available for subsequent use as I build and scale the containers.
 
 <p align="center">
-  <img src="img/3.PNG" width="200">
+  <img src="img/3.PNG" width="800">
 </p>
 
 ## Part 2 : Containerizing a Node.js Application for Development With Docker Compose
@@ -30,26 +30,36 @@ By pushing the application image to my DockerHub registry, I make it available f
 First, I clone the nodejs-mongo-mongoose repository. This repository includes the code from the setup described in How To Integrate MongoDB with my Node Application, which explains how to integrate a MongoDB database with an existing Node application using Mongoose.
 
 <p align="center">
-  <img src="img/4.PNG" width="200">
+  <img src="img/4.PNG" width="800">
 </p>
 
 ### Step 2 — Configuring our Application to Work with Containers
 In this step I will refactor and make some changes to the code.
 
 <p align="center">
-  <img src="img/5.PNG" width="200">
+  <img src="img/5.PNG" width="800">
 </p>
 
 ### Step 3 — Modifying Database Connection Settings
 In the next step I make our database connection method more robust by adding code that handles cases where our application fails to connect to our database.
 
 <p align="center">
-  <img src="img/6.PNG" width="200">
+  <img src="img/6.PNG" width="800">
 </p>
 
 ### Step 4 — Defining Services with Docker Compose
+Now I am ready to write the docker-compose.yml file with the service definitions.
+
+<p align="center">
+  <img src="img/7.PNG" width="800">
+</p>
 
 ### Step 5 — Testing the Application
+After building the container images and create the services by running `docker compose  up`
+
+<p align="center">
+  <img src="img/8.PNG" width="800">
+</p>
 
 ## Part 3 : How To Migrate a Docker Compose Workflow to Kubernetes
 ### Step 1 — Installing kompose

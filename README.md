@@ -6,28 +6,46 @@ I first need to make the application files, which I can then copy to my containe
 
 ### Step 2 — Creating the Application File
 This is the structure of the project.
-![](img/1.PNG?raw=true)
+
+<p align="center">
+  <img src="img/1.PNG" width="200">
+</p>
 
 ### Step 3 — Writing the Dockerfile
 My Dockerfile specifies what will be included in the application container when it is executed. Using a Dockerfile allows me to define my container environment and avoid discrepancies with dependencies or runtime versions.
-![](img/2.PNG?raw=true)
+
+<p align="center">
+  <img src="img/2.PNG" width="200">
+</p>
 
 ### Step 4 — Using a Repository to Work with Image
 By pushing the application image to my DockerHub registry, I make it available for subsequent use as I build and scale the containers.
-![](img/3.PNG?raw=true)
+
+<p align="center">
+  <img src="img/3.PNG" width="200">
+</p>
 
 ## Part 2 : Containerizing a Node.js Application for Development With Docker Compose
 ### Step 1 — Cloning the Project and Modifying Dependencies
 First, I clone the nodejs-mongo-mongoose repository. This repository includes the code from the setup described in How To Integrate MongoDB with my Node Application, which explains how to integrate a MongoDB database with an existing Node application using Mongoose.
-![](img/4.PNG?raw=true)
+
+<p align="center">
+  <img src="img/4.PNG" width="200">
+</p>
 
 ### Step 2 — Configuring our Application to Work with Containers
 In this step I will refactor and make some changes to the code.
-![](img/5.PNG?raw=true)
+
+<p align="center">
+  <img src="img/5.PNG" width="200">
+</p>
 
 ### Step 3 — Modifying Database Connection Settings
 In the next step I make our database connection method more robust by adding code that handles cases where our application fails to connect to our database.
-![](img/6.PNG?raw=true)
+
+<p align="center">
+  <img src="img/6.PNG" width="200">
+</p>
 
 ### Step 4 — Defining Services with Docker Compose
 

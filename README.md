@@ -171,10 +171,29 @@ Change the deployment manifest file, then create the image and push all.
 
 <h2>Part 5: How to Set Up Kubernetes Cluster Monitoring with Helm and Prometheus Operator</h2>
 <h3>Step 1 — Creating a Custom Values File</h3>
+I have to create a custom values file that will override some of the chart’s defaults with specific configuration parameters.
+
+<p align="center">
+  <img src="img/22.png">
+</p>
 
 <h3>Step 2 — Installing the prometheus-operator Chart</h3>
+On my local machine, I have to install the `prometheus-operator` Helm chart and passing in the custom values file.
+
+<p align="center">
+  <img src="img/23.png">
+</p>
 
 <h3>Step 3 — Accessing Grafana and Exploring Metrics Data</h3>
+The `prometheus-operator` Helm chart exposes Grafana as a `ClusterIP` Service, which means that it’s only accessible via a `cluster-internal IP address`. 
+
+<p align="center">
+  <img src="img/24.png">
+</p>
 
 <h3>Step 4 — Accessing Prometheus and Alertmanager</h3>
+To connect to the `Prometheus Pods`, we have to use `kubectl port-forward` to forward a local port.
 
+<p align="center">
+  <img src="img/25.png">
+</p>

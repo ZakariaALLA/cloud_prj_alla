@@ -99,23 +99,75 @@ We can move on to creating the database Service and an Init Container that will 
 </p>
 
 <h3>Step 6 — Modifying the PersistentVolumeClaim and Exposing the Application Frontend</h3>
+Before running the application, I have to make two final changes to ensure that the database storage will be provisioned properly and that I can expose our application frontend using a LoadBalancer.<br>
+We should check what is the right `storage` class by typing: `kubectl get storageclass`.<br>
+
+<p align="center">
+  <img src="img/13.png">
+</p>
 
 <h3>Step 7 — Starting and Accessing the Application</h3>
+The final step is to create our Kubernetes objects and test that the application is working as expected.
+
+<p align="center">
+  <img src="img/14.png">
+</p>
+
+
+<p align="center">
+  <img src="img/15.jpg">
+</p>
 
 <h2>Part 4: How To Automate Deployments to Kubernetes with CircleCI</h2>
 <h3>Step 1 — Creating the Local Git Repository</h3>
+The first step is to create a new Git repository locally that I  will push to GitHub later. Create two folder `do-sample-app`, `kube-general`.
+
+<p align="center">
+  <img src="img/15.png">
+</p>
 
 <h3>Step 2 — Creating a Service Account</h3>
+I create the Service Account on the cluster by running `kubectl apply`, like the following: `kubectl apply -f ~/kube-general/`.<br>
+We will recieve output similar to the following:
+
+<p align="center">
+  <img src="img/16.png">
+</p>
 
 <h3>Step 3 — Creating the Role and the Role Binding</h3>
+Create the file `~/kube-general/cicd-role.yml`.
+
+<p align="center">
+  <img src="img/17.png">
+</p>
 
 <h3>Step 4 — Creating our   Sample Application</h3>
+create a new `index.html` `Dockerfile` and build the image.
+
+<p align="center">
+  <img src="img/18.png">
+</p>
 
 <h3>Step 5 — Creating the Kubernetes Deployment and Service</h3>
+Create	the	YAML	deployment	file `~/do-sample-app/kube/do-sample- deployment.yml`
+
+<p align="center">
+  <img src="img/19.png">
+</p>
 
 <h3>Step 6 — Configuring CircleCI</h3>
+Access to `CircleCI` and create an account, configure it with our `github` account.
+
+<p align="center">
+  <img src="img/20.png">
+</p>
 
 <h3>Step 7 — Updating the Deployment on the Kubernetes Cluster</h3>
+Change the deployment manifest file, then create the image and push all.
+
+<p align="center">
+  <img src="img/21.png">
+</p>
 
 <h2>Part 5: How to Set Up Kubernetes Cluster Monitoring with Helm and Prometheus Operator</h2>
 <h3>Step 1 — Creating a Custom Values File</h3>

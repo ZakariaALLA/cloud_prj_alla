@@ -1,7 +1,6 @@
 <h1>Cloud Project</h1>
 
-<details>
-<summary><h2>Part 1 : How To Build a Node.js Application with Docker</h2></summary>
+<details><summary><h2>Part 1 : How To Build a Node.js Application with Docker</h2></summary>
 <p>
 
 <h3>Step 1 — Installing our   Application Dependencies</h3>
@@ -217,3 +216,5 @@ To connect to the `Prometheus Pods`, we have to use `kubectl port-forward` to fo
 <p align="center">
   <img src="img/25.png">
 </p>
+</p>
+</details>

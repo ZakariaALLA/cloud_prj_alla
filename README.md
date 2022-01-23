@@ -1,13 +1,13 @@
 <h1>Cloud Project</h1>
 
 ## Contents
-- [Part 1 How To Build a Node.js Application with Docker](#part-1-how-to-build-a-node.js-application-with-docker)
+- [Part 1 How To Build a Nodejs Application with Docker](#part-1-how-to-build-a-nodejs-application-with-docker)
     - [Step 1 - Installing our Application Dependencies](#step-1---installing-our-application-dependencies)
     - [Step 2 - Creating the Application File](#step-2---creating-the-application-file)
     - [Step 3 - Writing the Dockerfile](#step-1---installing-our-application-dependencies)
     - [Step 4 - Using a Repository to Work with Image](#step-4---using-a-repository-to-work-with-image)
 
-- [Part 2 Containerizing a Node.js Application for Development With Docker Compose](#part-2-containerizing-a-node.js-application-for-development-with-docker-compose)
+- [Part 2 Containerizing a Nodejs Application for Development With Docker Compose](#part-2-containerizing-a-nodejs-application-for-development-with-docker-compose)
     - [Step 1 - Cloning the Project and Modifying Dependencies](#Step-1---cloning-the-project-and-modifying-dependencies)
     - [Step 2 - Configuring our Application to Work with Containers](#step-2---onfiguring-our-application-to-work-with-containers)
     - [Step 3 - Modifying Database Connection Settings](#step-3---modifying-catabase-connection-settings)
@@ -39,7 +39,7 @@
     - [Step 4 - Accessing Prometheus and Alertmanager](#step-4---accessing-prometheus-and-alertmanager)
 
 
-## Part 1 How To Build a Node.js Application with Docker
+## Part 1 How To Build a Nodejs Application with Docker
 ### Step 1 - Installing our Application Dependencies
 I first need to make the application files, which I can then copy to my container. These files will include the application’s static content, code, and dependencies.
 
@@ -64,7 +64,7 @@ By pushing the application image to my DockerHub registry, I make it available f
   <img src="img/3.PNG" >
 </p>
 
-## Part 2 Containerizing a Node.js Application for Development With Docker Compose
+## Part 2 Containerizing a Nodejs Application for Development With Docker Compose
 ### Step 1 - Cloning the Project and Modifying Dependencies
 First, I clone the nodejs-mongo-mongoose repository. This repository includes the code from the setup described in How To Integrate MongoDB with my Node Application, which explains how to integrate a MongoDB database with an existing Node application using Mongoose.
 

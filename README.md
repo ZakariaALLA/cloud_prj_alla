@@ -1,7 +1,7 @@
 <h1>Cloud Project</h1>
 
 <details>
-<summary>Part 1 : How To Build a Node.js Application with Docker</summary>
+<summary><h2>Part 1 : How To Build a Node.js Application with Docker</h2></summary>
 <p>
 
 <h3>Step 1 — Installing our   Application Dependencies</h3>
@@ -31,8 +31,8 @@ By pushing the application image to my DockerHub registry, I make it available f
 </p>
 </details>
 <details>
-<summary><h2>
-Part 2 : Containerizing a Node.js Application for Development With Docker Compose</h2>
+<summary><h2>Part 2 : Containerizing a Node.js Application for Development With Docker Compose</h2></summary>
+<p>
 
 <h3>Step 1 — Cloning the Project and Modifying Dependencies</h3>
 First, I clone the nodejs-mongo-mongoose repository. This repository includes the code from the setup described in How To Integrate MongoDB with my Node Application, which explains how to integrate a MongoDB database with an existing Node application using Mongoose.
@@ -72,8 +72,8 @@ After building the container images and create the services by running `docker c
 </p>
 </details>
 <details>
-<summary><h2>
-Part 3 : How To Migrate a Docker Compose Workflow to Kubernetes
+<summary><h2>Part 3 : How To Migrate a Docker Compose Workflow to Kubernetes</h2></summary>
+<p>
 <h3>Step 1 — Installing kompose</h3>
 The first step is to install kompose.
 
@@ -133,9 +133,8 @@ The final step is to create our Kubernetes objects and test that the application
 </p>
 </details>
 <details>
-<summary><h2>
-Part 4: How To Automate Deployments to Kubernetes with CircleCI</h2>
-
+<summary><h2>Part 4: How To Automate Deployments to Kubernetes with CircleCI</h2></summary>
+<p>
 <h3>Step 1 — Creating the Local Git Repository</h3>
 The first step is to create a new Git repository locally that I  will push to GitHub later. Create two folder `do-sample-app`, `kube-general`.
 
@@ -189,9 +188,8 @@ Change the deployment manifest file, then create the image and push all.
 </p>
 </details>
 <details>
-<summary><h2>
-Part 5: How to Set Up Kubernetes Cluster Monitoring with Helm and Prometheus Operator</h2>
-
+<summary><h2>Part 5: How to Set Up Kubernetes Cluster Monitoring with Helm and Prometheus Operator</h2>
+<p>
 <h3>Step 1 — Creating a Custom Values File</h3>
 I have to create a custom values file that will override some of the chart’s defaults with specific configuration parameters.
 

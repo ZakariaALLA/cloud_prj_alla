@@ -29,10 +29,10 @@ By pushing the application image to my DockerHub registry, I make it available f
 </p>
 
 </p>
+</details>
 <details>
-<summary>
-Part 2 : Containerizing a Node.js Application for Development With Docker Compose</summary>
-<p>
+<summary><h2>
+Part 2 : Containerizing a Node.js Application for Development With Docker Compose</h2>
 
 <h3>Step 1 — Cloning the Project and Modifying Dependencies</h3>
 First, I clone the nodejs-mongo-mongoose repository. This repository includes the code from the setup described in How To Integrate MongoDB with my Node Application, which explains how to integrate a MongoDB database with an existing Node application using Mongoose.
@@ -70,8 +70,9 @@ After building the container images and create the services by running `docker c
 </p>
 
 </p>
+</details>
 <details>
-<summary>
+<summary><h2>
 Part 3 : How To Migrate a Docker Compose Workflow to Kubernetes
 <h3>Step 1 — Installing kompose</h3>
 The first step is to install kompose.
@@ -130,10 +131,10 @@ The final step is to create our Kubernetes objects and test that the application
 </p>
 
 </p>
+</details>
 <details>
-<summary>
-Part 4: How To Automate Deployments to Kubernetes with CircleCI</summary>
-<p>
+<summary><h2>
+Part 4: How To Automate Deployments to Kubernetes with CircleCI</h2>
 
 <h3>Step 1 — Creating the Local Git Repository</h3>
 The first step is to create a new Git repository locally that I  will push to GitHub later. Create two folder `do-sample-app`, `kube-general`.
@@ -186,10 +187,10 @@ Change the deployment manifest file, then create the image and push all.
 </p>
 
 </p>
+</details>
 <details>
-<summary>
-Part 5: How to Set Up Kubernetes Cluster Monitoring with Helm and Prometheus Operator</summary>
-<p>
+<summary><h2>
+Part 5: How to Set Up Kubernetes Cluster Monitoring with Helm and Prometheus Operator</h2>
 
 <h3>Step 1 — Creating a Custom Values File</h3>
 I have to create a custom values file that will override some of the chart’s defaults with specific configuration parameters.
